@@ -9,7 +9,7 @@ $(document).ready(function() {
     
     function processCities(){
         citiesArray = cities.split(", ");
-        console.log(citiesArray);
+        // console.log(citiesArray);
         $("#data-retrieval").hide();
         if(citiesArray.length<4){
             $("label").text("I think you need to travel more, "+ name+ "!");
@@ -70,13 +70,13 @@ $(document).ready(function() {
                 event.preventDefault();
             if(nameCheck===false){
                 name = $("#input-form").val().trim();
-                console.log(name);
+                // console.log(name);
                 placeQuestion();
                 nameCheck = true;
             }
             else{
                 cities = $("#input-form").val().trim();
-                console.log(cities);
+                // console.log(cities);
                 processCities(); 
             }
 
@@ -95,13 +95,13 @@ $(document).ready(function() {
             event.preventDefault();
             if(nameCheck===false){
                 name = $("#input-form").val().trim();
-                console.log(name);
+                // console.log(name);
                 placeQuestion();
                 nameCheck = true;
             }
             else{
                 cities = $("#input-form").val().trim();
-                console.log(cities);
+                // console.log(cities);
                 processCities();
 
             }
@@ -116,7 +116,7 @@ $(document).ready(function() {
     $("#city-buttons").on("click","#city-btn",function(){
         // $(this).text();
         var city = $(this).text().trim();
-        console.log(city);
+        // console.log(city);
         $("#current-city").text(city);
         printInfo(city);
     });
