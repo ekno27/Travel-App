@@ -1,7 +1,7 @@
 $(document).ready(function() {
     function placeQuestion(){
         
-        $("h1").text("Hello, "+ name);
+        $("h1").text("Hello, "+ name+ "!");
         $("label").text("What places have you traveled to?")
         $("#input-form").val("");
         $("#input-form").attr("placeholder", "Example: Paris, London, New York");
